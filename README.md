@@ -58,7 +58,7 @@ Just as an obvious note, this is for Unity.
 
 Inspector
 ---------
-![screenshot](http://i.imgur.com/M3ri7XC.png)
+![screenshot](http://i.imgur.com/hB24UOQ.png)
 
 License
 -------
