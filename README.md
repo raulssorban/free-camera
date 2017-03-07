@@ -62,4 +62,6 @@ Inspector
 
 License
 -------
-This script is fully written by me.
+This script is fully written by me (Raul) under MIT [license].
+
+[license]: https://github.com/raulssorban/free-camera/blob/master/LICENSE.md
