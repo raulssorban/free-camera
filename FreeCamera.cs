@@ -3,7 +3,7 @@ using UnityEngine;
 public class FreeCamera : MonoBehaviour
 {
     [Header("Target")]
-    public bool targetMode;
+    public bool orbitMode;
     public float distance = 2.5f;
     public Transform targetTransform;
 
@@ -84,17 +84,17 @@ public class FreeCamera : MonoBehaviour
     }
     public void FreeCamInput ()
     {
-        freeCamLock = Input.GetKey (mainKey) && !targetMode;
+        freeCamLock = Input.GetKey (mainKey) && !orbitMode;
 
         //
         // Cursor lockage
         //
-        if (freeCamLock && !targetMode)
+        if (freeCamLock && !orbitMode)
         {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
-        else if (!freeCamLock && !targetMode)
+        else if (!freeCamLock && !orbitMode)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -141,23 +141,23 @@ public class FreeCamera : MonoBehaviour
     }
     public void TargetMotorInput ()
     {
-        targetLock = Input.GetKey (mainKey) && targetMode;
+        targetLock = Input.GetKey (mainKey) && orbitMode;
 
         //
         // Error masking
         //
         if (targetTransform == null)
-            targetMode = false;
+            orbitMode = false;
 
         //
         // Cursor lockage
         //
-        if (targetLock && targetMode)
+        if (targetLock && orbitMode)
         {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
-        else if (!targetLock && targetMode)
+        else if (!targetLock && orbitMode)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
