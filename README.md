@@ -1,2 +1,3 @@
-# free-camera
-A free camera script, pretty complex customized and clean code written.
+# Free Camera
+A pretty complex script, and fully customizable written in clean code.
+This code is taken from a project I'm working on and use it as testing.
