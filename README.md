@@ -9,7 +9,7 @@ What does it actually do?
 
 ### Target
 
-- **Target Mode**: Use the optional target orbit?
+- **Orbit Mode**: Use the optional target orbit?
 - **Distance**: Camera distance between target transform and camera itself.
 - **Target Transform**: The target transform that would be orbited.
 
@@ -58,7 +58,7 @@ Just as an obvious note, this is for Unity.
 
 Inspector
 ---------
-![screenshot](http://i.imgur.com/aqiBytP.png)
+![screenshot](http://i.imgur.com/M3ri7XC.png)
 
 License
 -------
